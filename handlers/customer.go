@@ -52,7 +52,7 @@ func GetCustomer(c *fiber.Ctx) error {
 
 
 func CreateCustomer(c *fiber.Ctx) error {
-	var mutation models.Request[models.Customer]
+	var mutation models.Request[models.CustomerMutation]
 
 	err := c.BodyParser(&mutation)
 
